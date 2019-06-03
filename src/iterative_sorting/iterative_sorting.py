@@ -8,8 +8,9 @@ def selection_sort( arr ):
         # (hint, can do in 3 loc) .
         for j in range(1, len(arr)-1):
             if arr[smallest_index] > arr[j]:
+                holder = arr[j]
                 arr[smallest_index] = arr[j]
-                
+                arr[j] = arr[cur_index]
 
 
         # TO-DO: swap
